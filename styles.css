@@ -584,6 +584,8 @@ body.dark-mode .navbar.scrolled{background-color:rgba(17,24,39,.95)}
   box-shadow:var(--shadow-md);
   padding:2rem;
   transition:all var(--transition-base);
+  overflow:visible;
+  word-break:break-word;
 }
 .timeline-content:hover{border-color:var(--primary-color);box-shadow:var(--shadow-lg);transform:translateX(10px)}
 
@@ -657,9 +659,9 @@ body.dark-mode .navbar.scrolled{background-color:rgba(17,24,39,.95)}
 .tech-badge:hover{background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));color:#fff;border-color:transparent}
 
 /* Education */
-.education-section{margin-top:4rem}
+.education-section{margin-top:4rem; padding-top:2rem;}
 .education-title{color:var(--text-primary);font-size:2rem;font-weight:700;margin-bottom:2rem;text-align:center}
-.education-grid{display:grid;gap:2rem}
+.education-grid{display:grid;gap:2rem;overflow:visible;}
 .education-card{
   background:var(--bg-primary);
   border:2px solid var(--border-color);
@@ -668,8 +670,16 @@ body.dark-mode .navbar.scrolled{background-color:rgba(17,24,39,.95)}
   padding:2rem;
   text-align:center;
   transition:all var(--transition-base);
+  position:relative;
+  overflow:visible;
 }
-.education-card:hover{border-color:var(--primary-color);box-shadow:var(--shadow-lg);transform:translateY(-5px)}
+.education-card:hover{
+  border-color:var(--primary-color);
+  box-shadow:var(--shadow-lg);
+  transform:translateY(-3px);
+  background:var(--bg-primary);
+}
+
 .education-icon{font-size:3rem;margin-bottom:1rem}
 .education-degree{color:var(--text-primary);font-size:1.25rem;font-weight:700;margin-bottom:.5rem}
 .education-institution{color:var(--primary-color);font-size:1.125rem;font-weight:600;margin-bottom:.5rem}
@@ -1249,6 +1259,14 @@ a.contact-detail-value:hover{color:var(--primary-color)}
   background: #fff;
   padding: 0;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-logo-img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .company-logo-img img {
   width: 100%;
