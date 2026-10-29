@@ -1273,8 +1273,8 @@ a.contact-detail-value:hover{color:var(--primary-color)}
 }
 /* Specific size for Cognizant logo */
 .cognizant-logo img {
-  width: 80px;
-  height: 80px;
+  width: 112px;
+  height: 112px;
   object-fit: contain;
 }
 .company-logo-img img {
