@@ -1,0 +1,41 @@
+/* extra.css – responsive overflow fixes */
+html, body {
+  overflow-x: hidden;
+}
+* {
+  max-width: 100%;
+}
+.container,
+.navbar,
+.hero,
+.about-container,
+.skills-container,
+.experience-container,
+.projects-container,
+.contact-container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+/* Ensure grids do not exceed viewport */
+.about-grid,
+.skills-grid,
+.projects-grid,
+.education-grid {
+  width: 100%;
+  overflow-x: hidden;
+}
+/* Tablet and laptop adjustments */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* Landscape fixes */
+@media (orientation: landscape) {
+  .hero-scroll-indicator {
+    bottom: 2rem;
+  }
+}
