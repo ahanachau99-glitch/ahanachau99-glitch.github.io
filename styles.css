@@ -405,7 +405,7 @@ body.dark-mode .navbar.scrolled{background-color:rgba(17,24,39,.95)}
 .about-text{display:flex;flex-direction:column;gap:1.5rem}
 .about-subtitle{color:var(--primary-color);font-size:1.5rem;font-weight:600;margin-bottom:.5rem}
 .about-paragraph{color:var(--text-secondary);font-size:1.125rem;line-height:1.8}
-.about-cta{margin-top:1rem}
+.about-cta{margin-top:1rem;margin-bottom:2rem;}
 
 .about-highlights{display:grid;gap:1.5rem;grid-template-columns:repeat(2,1fr)}
 .highlight-card{
@@ -703,6 +703,9 @@ body.dark-mode .navbar.scrolled{background-color:rgba(17,24,39,.95)}
 /* Add spacing between sections on mobile */
 .experience{margin-bottom:4rem;}
 .education-section{margin-top:4rem;}
+}
+@media(max-width:768px){
+  .about-cta{margin-bottom:3rem;}
 }
 
 /* =============================================
@@ -1266,6 +1269,12 @@ a.contact-detail-value:hover{color:var(--primary-color)}
 .company-logo-img img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
+}
+/* Specific size for Cognizant logo */
+.cognizant-logo img {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 .company-logo-img img {
